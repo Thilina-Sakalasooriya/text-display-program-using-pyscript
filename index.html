@@ -1,0 +1,25 @@
+<!DOCTYPE html
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simple text display program</title>
+  <link rel="stylesheet" href="[enter the location for the css file]" />
+  <script defer src="[enter the location for the js file]"></script>
+  </head>
+  <body style="text-align: center;">
+    <h2>Simple Text display with Button click</h2><br>
+    <button py-click="write_to_page()" id="manual">your Text</button><br><br><br>
+    <div id="manual-write" style="text-align: center;"></div>
+    <py-script>
+    def write_to_page():
+      manual_div = Element("manual-write")
+      manual_div.element.innerText = "The text that appear when the button clicks"
+    </py-script>
+    <py-script>
+      def write_to_page():
+        manual_div = Element("manual-write")
+        manual_div.element.innerText = "The text that appear when the button clicks"
+      </py-script>
+  </body>
+</html>
